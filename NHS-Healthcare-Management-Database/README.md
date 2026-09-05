@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-I built a relational healthcare database built using MySQL to manage and analyze patients, doctors, departments, appointments, diagnoses, treatments, prescriptions, and payments.
+I built a relational healthcare database using MySQL to manage and analyze patients, doctors, departments, appointments, diagnoses, treatments, prescriptions, and payments.
 
 ## Tools Used
 
