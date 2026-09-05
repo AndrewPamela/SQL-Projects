@@ -8,13 +8,13 @@ The project demonstrates practical SQL skills in data exploration, querying, agg
 
 ## Business Objectives
 
-* Analyze overall sales performance.
-* Identify top-performing products and categories.
-* Evaluate customer purchasing behavior.
-* Identify high-value customers.
-* Analyze employee sales performance.
-* Examine order trends and patterns.
-* Generate insights that can support business decision-making.
+* Analyze overall sales performance
+* Identify top-performing products and categories
+* Evaluate customer purchasing behavior
+* Identify high-value customers
+* Analyze employee sales performance
+* Examine order trends and patterns
+* Generate insights to support business decision-making
 
 ## SQL Skills Demonstrated
 
@@ -50,12 +50,11 @@ Analyzed employee order activity and sales performance to understand differences
 
 ## Project Structure
 
-```text
 Northwind-Sales-Customer-Analytics/
+
 ├── README.md
 ├── Andrew_Pamela_Northwind_DB.zip
 └── images/
-```
 
 ## Tools Used
 
@@ -71,4 +70,4 @@ This project demonstrates my ability to use SQL to transform relational database
 
 **Andrew Pamela**
 
-[GitHub Portfolio](https://github.com/AndrewPamela)
+GitHub: https://github.com/AndrewPamela
