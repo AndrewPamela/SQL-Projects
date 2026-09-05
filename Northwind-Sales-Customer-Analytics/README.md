@@ -2,72 +2,127 @@
 
 ## Project Overview
 
-This SQL project analyzes the Northwind database to uncover insights into sales performance, customer purchasing behavior, products, employees, and order trends.
+This project involved building and analysing a relational **Northwind Sales Database using MySQL**.
 
-The project demonstrates practical SQL skills in data exploration, querying, aggregation, filtering, joins, subqueries, and business-focused analysis.
+I created and populated the database using SQL `CREATE TABLE` and `INSERT INTO` statements, then performed business-focused analysis to examine order activity, customer behaviour, employee performance, freight costs, shipping activity, and sales trends.
 
-## Business Objectives
+The project demonstrates my ability to work with relational databases, write SQL queries, join related tables, aggregate data, and transform database information into useful business insights.
 
-* Analyze overall sales performance
-* Identify top-performing products and categories
-* Evaluate customer purchasing behavior
-* Identify high-value customers
-* Analyze employee sales performance
-* Examine order trends and patterns
-* Generate insights to support business decision-making
+## Business Questions
 
-## SQL Skills Demonstrated
+The analysis focused on questions such as:
 
-* SELECT and filtering
-* WHERE and ORDER BY
-* GROUP BY and HAVING
-* Aggregate functions such as SUM, COUNT, AVG, MIN, and MAX
-* INNER JOIN and LEFT JOIN
-* Subqueries
-* CASE statements
-* Common Table Expressions (CTEs)
-* Date and time analysis
-* Customer and product segmentation
-* Business-focused data analysis
+* What is the overall order and freight performance?
+* Which employees handled the highest number of orders?
+* Which customers placed the most orders?
+* How did order activity change over time?
+* How many orders were shipped and how many remained unshipped?
 
-## Key Areas of Analysis
+## Database Tables
 
-### Sales Analysis
+The database contains the following tables:
 
-Analyzed orders, revenue, products, categories, and sales performance to identify important sales trends.
+* `categories`
+* `customers`
+* `employees`
+* `employees_territories`
+* `order_details`
+* `orders`
+* `products`
+* `regions`
+* `shippers`
+* `suppliers`
+* `territories`
 
-### Customer Analysis
+## SQL Work Completed
 
-Examined customer purchasing patterns, order frequency, and customer value to identify high-performing customers.
+### Database Creation & Data Population
 
-### Product Analysis
+I created the relational database structure and populated the tables using SQL.
 
-Evaluated product sales and category performance to identify the products and categories contributing most to revenue.
+Key SQL tasks included:
 
-### Employee Analysis
+* Creating relational tables
+* Defining primary keys
+* Defining foreign keys
+* Inserting records using `INSERT INTO`
+* Altering table structures where required
+* Working with related transactional and reference tables
 
-Analyzed employee order activity and sales performance to understand differences in employee contribution.
+### Business Analysis
 
-## Project Structure
+I used SQL to perform:
 
-Northwind-Sales-Customer-Analytics/
+* Aggregate calculations
+* `COUNT()` and `SUM()` analysis
+* `GROUP BY`
+* `ORDER BY`
+* `LIMIT`
+* Date-based analysis using `YEAR()` and `MONTH()`
+* Conditional logic using `CASE`
+* Table joins
 
-├── README.md
-├── Andrew_Pamela_Northwind_DB.zip
-└── images/
+## Key Analysis
+
+### 1. Overall Order & Freight Performance
+
+Calculated total orders, total freight costs, and average freight per order.
+
+![Total Sales Analysis](images/01-database-setup.png)
+
+### 2. Employee Order Performance
+
+Compared employees based on the number of orders handled and associated freight.
+
+![Employee Order Performance](images/02-total-sales.png)
+
+### 3. Top Customers
+
+Identified the customers with the highest number of orders and their associated freight contribution.
+
+![Top Customers](images/03-employee-order-performance.png)
+
+### 4. Monthly Order Trend
+
+Analysed order activity across months to identify changes and patterns over time.
+
+![Monthly Order Trend](images/04-top-customers.png)
+
+### 5. Shipping Performance
+
+Examined the number of shipped and unshipped orders.
+
+![Shipping Performance](images/05-monthly-order-trend.png)
+
+### 6. Additional Project Evidence
+
+![Northwind SQL Analysis](images/06-shipping-performance.png)
+
+## Skills Demonstrated
+
+**SQL:** MySQL • SELECT • JOINs • GROUP BY • ORDER BY • Aggregate Functions • CASE Statements • Date Functions • Data Analysis
+
+**Database:** Relational Database Design • Primary Keys • Foreign Keys • Data Population • Table Relationships
+
+**Business Analysis:** Sales Analysis • Customer Analysis • Employee Performance • Order Analysis • Shipping Analysis • Trend Analysis
 
 ## Tools Used
 
 * MySQL
-* SQL
+* MySQL Workbench
 * GitHub
 
 ## Project Outcome
 
-This project demonstrates my ability to use SQL to transform relational database data into meaningful business insights. The analysis focuses on answering practical business questions and presenting findings in a clear and structured manner.
+This project demonstrates my ability to build and work with a relational SQL database from the ground up, populate it with data, and use SQL to answer practical business questions.
+
+The analysis provided insight into customer ordering behaviour, employee performance, order trends, freight activity, and shipping operations.
 
 ## Author
 
 **Andrew Pamela**
 
-GitHub: https://github.com/AndrewPamela
+[GitHub](https://github.com/AndrewPamela)
+
+
+[GitHub](https://github.com/AndrewPamela)
