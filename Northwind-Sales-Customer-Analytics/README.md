@@ -2,127 +2,97 @@
 
 ## Project Overview
 
-This project involved building and analysing a relational **Northwind Sales Database using MySQL**.
+This project analyzes the Northwind database using SQL to explore order activity, employee performance, customer ordering patterns, freight performance, and shipping status.
 
-I created and populated the database using SQL `CREATE TABLE` and `INSERT INTO` statements, then performed business-focused analysis to examine order activity, customer behaviour, employee performance, freight costs, shipping activity, and sales trends.
-
-The project demonstrates my ability to work with relational databases, write SQL queries, join related tables, aggregate data, and transform database information into useful business insights.
+The analysis was designed around practical business questions that can support reporting and better understanding of sales and order operations.
 
 ## Business Questions
 
-The analysis focused on questions such as:
+The analysis focused on five key questions:
 
-* What is the overall order and freight performance?
-* Which employees handled the highest number of orders?
-* Which customers placed the most orders?
-* How did order activity change over time?
-* How many orders were shipped and how many remained unshipped?
-
-## Database Tables
-
-The database contains the following tables:
-
-* `categories`
-* `customers`
-* `employees`
-* `employees_territories`
-* `order_details`
-* `orders`
-* `products`
-* `regions`
-* `shippers`
-* `suppliers`
-* `territories`
-
-## SQL Work Completed
-
-### Database Creation & Data Population
-
-I created the relational database structure and populated the tables using SQL.
-
-Key SQL tasks included:
-
-* Creating relational tables
-* Defining primary keys
-* Defining foreign keys
-* Inserting records using `INSERT INTO`
-* Altering table structures where required
-* Working with related transactional and reference tables
-
-### Business Analysis
-
-I used SQL to perform:
-
-* Aggregate calculations
-* `COUNT()` and `SUM()` analysis
-* `GROUP BY`
-* `ORDER BY`
-* `LIMIT`
-* Date-based analysis using `YEAR()` and `MONTH()`
-* Conditional logic using `CASE`
-* Table joins
-
-## Key Analysis
-
-### 1. Overall Order & Freight Performance
-
-Calculated total orders, total freight costs, and average freight per order.
-
-![Total Sales Analysis](images/01-database-setup.png)
-
-### 2. Employee Order Performance
-
-Compared employees based on the number of orders handled and associated freight.
-
-![Employee Order Performance](images/02-total-sales.png)
-
-### 3. Top Customers
-
-Identified the customers with the highest number of orders and their associated freight contribution.
-
-![Top Customers](images/03-employee-order-performance.png)
-
-### 4. Monthly Order Trend
-
-Analysed order activity across months to identify changes and patterns over time.
-
-![Monthly Order Trend](images/04-top-customers.png)
-
-### 5. Shipping Performance
-
-Examined the number of shipped and unshipped orders.
-
-![Shipping Performance](images/05-monthly-order-trend.png)
-
-### 6. Additional Project Evidence
-
-![Northwind SQL Analysis](images/06-shipping-performance.png)
-
-## Skills Demonstrated
-
-**SQL:** MySQL • SELECT • JOINs • GROUP BY • ORDER BY • Aggregate Functions • CASE Statements • Date Functions • Data Analysis
-
-**Database:** Relational Database Design • Primary Keys • Foreign Keys • Data Population • Table Relationships
-
-**Business Analysis:** Sales Analysis • Customer Analysis • Employee Performance • Order Analysis • Shipping Analysis • Trend Analysis
+1. What is the overall order and freight performance?
+2. Which employees handled the highest number of orders?
+3. Which customers placed the most orders?
+4. How did order activity change over time?
+5. How many orders were shipped and how many remained unshipped?
 
 ## Tools Used
 
 * MySQL
-* MySQL Workbench
+* SQL
 * GitHub
 
-## Project Outcome
+## SQL Techniques Used
 
-This project demonstrates my ability to build and work with a relational SQL database from the ground up, populate it with data, and use SQL to answer practical business questions.
+* SELECT statements
+* JOINs
+* Aggregate functions
+* GROUP BY
+* ORDER BY
+* COUNT(DISTINCT)
+* CASE statements
+* Date functions
+* Filtering and sorting
 
-The analysis provided insight into customer ordering behaviour, employee performance, order trends, freight activity, and shipping operations.
+## Key Findings
 
-## Author
+### Overall Order and Freight Performance
 
-**Andrew Pamela**
+The dataset contains **830 orders**.
 
-[GitHub](https://github.com/AndrewPamela)
+* Total freight: **64,942.69**
+* Average freight per order: **78.24**
+* Minimum freight: **0.02**
+* Maximum freight: **1,007.64**
 
+### Employee Order Performance
 
-[GitHub](https://github.com/AndrewPamela)
+**Peacock** handled the highest number of orders with **156 orders**.
+
+The next highest were:
+
+* Leverling — 127 orders
+* Davolio — 123 orders
+* Callahan — 104 orders
+
+### Customer Order Activity
+
+**QUICK-Stop (SAVEA)** placed the highest number of orders with **31 orders**.
+
+The next highest were:
+
+* Cactus Comidas para llevar (ERNSH) — 30 orders
+* Old World Delicatessen (QUICK) — 28 orders
+* Consolidated Holdings (FOLKO) — 19 orders
+* Galería del gastrónomo (HUNGO) — 19 orders
+
+### Order Activity Over Time
+
+Order activity was analyzed monthly from **July 2016 to May 2018**.
+
+The highest monthly order volume was **74 orders in April 2018**, while the lowest was **14 orders in May 2018**.
+
+Overall, the monthly results account for all **830 orders** in the analysis.
+
+### Shipping Performance
+
+All **830 orders** had a recorded shipping date.
+
+* Shipped orders: **830**
+* Unshipped orders: **0**
+* Shipped percentage: **100%**
+
+## Project Structure
+
+```text
+Northwind-Sales-Customer-Analytics/
+│
+├── README.md
+│
+└── SQL/
+    └── Northwind_Business_Analysis.sql
+```
+
+## Conclusion
+
+This project demonstrates the use of SQL to answer practical business questions from a relational database. The analysis covers order volume, freight, employee activity, customer activity, order trends, and shipping status.
